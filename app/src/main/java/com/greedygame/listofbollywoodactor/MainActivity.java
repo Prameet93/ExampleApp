@@ -8,12 +8,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
+
     ListView listView;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         listView = (ListView) findViewById(R.id.listview);
         String[] values = new String[] { "Amitabh Bachhan",
                 "Salman Khan",
@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
                 "Sushant Singh Rajput",
                 "Dharmendra",
                 "Rajesh Khanna"
-
-
         };
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
@@ -49,5 +47,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+
+
 
 

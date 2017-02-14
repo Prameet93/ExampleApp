@@ -53,7 +53,6 @@ public class Main2Activity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String result) {
             adapter.notifyDataSetChanged();
-
         }
 
         @Override
